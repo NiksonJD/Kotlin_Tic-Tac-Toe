@@ -43,7 +43,6 @@ fun main(args: Array<String>) {
             println("This cell is occupied! Choose another one!")
             continue@start
         }
-
         if (winner.size > 1 || Math.abs(playField.filter { it == "X" }.size - playField.filter { it == "O" }.size) > 1) {
             println("Impossible")
             break
